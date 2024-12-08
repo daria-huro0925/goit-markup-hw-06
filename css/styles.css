@@ -486,15 +486,11 @@ background-color: transparent;
 
 .benefits-list {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
     gap: 72px;
 }
 
-.benefits-item {
-    width: calc((100% - 24px) / 2);
-}
+.benefits-item {}
 
 .benefits-wrapper {
     display: none;
@@ -528,7 +524,9 @@ background-color: transparent;
     .benefits-subtitle {
     text-align: start;
     }
-
+    .benefits-item {
+    width: calc((100% - 24px) / 2);
+    }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -795,13 +793,13 @@ background-color: transparent;
 .footer-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
-    gap: 96px;
+    gap: 72px;
 }
 
 .footer-logo {
-    display: inline-block;
+    display: flex;
     margin-bottom: 16px;
     justify-content: center;
 }
@@ -865,9 +863,7 @@ background-color: transparent;
     fill: #f4f4fd;
 }
 
-.footer-subscribe {
-    
-}
+.footer-subscribe {}
 
 .footer-subscribe-caption {
     font-weight: 500;
@@ -909,60 +905,64 @@ background-color: transparent;
     justify-content: center;
     align-items: center;
 
-        min-width: 165px;
-        height: 40px;
+    min-width: 165px;
+    height: 40px;
     
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        text-align: center;
-        color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
     
-        cursor: pointer;
-        background-color: #4D5AE5;
-        border: none;
-        border-radius: 4px;
-    }
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+}
 
 
 @media only screen and (min-width: 768px) {
     .footer-container {
+        align-items: baseline;
         flex-direction: row;
         flex-wrap: wrap;
-        /* padding: 0 108px; */
         gap: 72px 24px;
     }
     .footer-logo {
-    justify-content: flex-start;
+        display: inline-block;
     }
     .footer-text {
         width: 264px;
     }
 
-        .footer-subscribe-form {
+    .footer-subscribe-form {
         flex-direction: row;
+        flex-wrap: nowrap;
         gap: 24px;
-        }
+    }
+    .socials-text {
+        justify-content: flex-start;
+    }
+    
 }
 
 @media only screen and (min-width: 1158px) {
     .footer {
         padding: 100px 0;
     }
-    .footer-container {
-        align-items: baseline;
+    .logo-part {
+        margin-right: 120px;
     }
+        
+     .footer-subscribe {
+        margin-left: 80px;
+    }
+  
 
-        .logo-part {
-            margin-right: 120px;
-        }
-        .footer-text {
-            width: 264px;
-        }
-}  .footer-subscribe {
-     margin-left: 80px;
- }
+
+ 
+}
 
 
 
