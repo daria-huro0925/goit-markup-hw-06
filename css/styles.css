@@ -41,7 +41,7 @@ a {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -73,7 +73,6 @@ button {
 @media only screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-
     }
 }
 
@@ -169,9 +168,9 @@ button {
 }
 
 .mobile-menu-btn {
-padding: 0;
-border: none;
-background-color: transparent;
+    padding: 0;
+    border: none;
+    background-color: transparent;
 }
 
 .burger-icon {
@@ -260,23 +259,23 @@ background-color: transparent;
 
 @media only screen and (min-width: 1158px) {
     .header-logo {
-            margin-right: 76px;
-        }
-        .address-list {
-            align-items: center;
-            flex-direction: row;
-            gap: 40px;
-        }
+        margin-right: 76px;
+    }
+    .address-list {
+        align-items: center;
+        flex-direction: row;
+        gap: 40px;
+    }
     
-        .address-item {
-            padding: 24px 0;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-        }
-        .header-logo {
-            margin-right: 76px;
-        }
+    .address-item {
+        padding: 24px 0;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+    .header-logo {
+        margin-right: 76px;
+    }
 }
 
 /* mobile menu */
@@ -359,8 +358,6 @@ background-color: transparent;
     }
 }
 
-.menu-address {}
-
 .mobile-list {
     display: flex;
     gap: 40px;
@@ -414,6 +411,7 @@ background-color: transparent;
     letter-spacing: 0.02em;
     color: #ffffff;
     text-align: center;
+    margin: 0 auto;
     margin-bottom: 72px;
 }
 
@@ -459,7 +457,7 @@ background-color: transparent;
                 rgba(46, 47, 66, 0.7)),
             url(../images/hero/hero_tab@1x.jpg);
   }
-  .hero-title{
+  .hero-title {
     font-size: 56px;
     line-height: 1.07;
     margin-bottom: 36px;
@@ -469,16 +467,16 @@ background-color: transparent;
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .hero-container {
+  .hero-container {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/hero/hero_tab@2x.jpg);
-    }
+  }
 }
 
 @media only screen and (min-width: 1158px) {
     .hero-container {
-        padding: 188px 472px;
+        padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
                 url(../images/hero/hero_desc@1x.jpg);
@@ -544,7 +542,6 @@ background-color: transparent;
     flex-direction: row;
     gap: 72px 24px;
     }
-
     .benefits-subtitle {
     text-align: start;
     }
@@ -555,38 +552,38 @@ background-color: transparent;
 
 @media only screen and (min-width: 1158px) {
     .benefits {
-        padding: 120px 156px;
+        padding: 120px 0;
     }
 
        
     .benefits-list {
-            text-align: left;
-            gap: 24px;
-        }
+        text-align: left;
+        gap: 24px;
+    }
 
-        .benefits-item {
-            width: calc((100% - 72px) / 4);
-        }
-        .benefits-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f4f4fd;
-            width: 264px;
-            height: 112px;
-            border: 1px solid #8e8f99;
-            border-radius: 4px;
-            margin-bottom: 8px;
-        }
-        .benefits-wrapper:hover,
-        .benefits-wrapper:focus {
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-        }
+    .benefits-item {
+        width: calc((100% - 72px) / 4);
+    }
+    .benefits-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4fd;
+        width: 264px;
+        height: 112px;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+    .benefits-wrapper:hover,
+    .benefits-wrapper:focus {
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
 
-                .benefits-text {
-                    font-weight: 400;
-                }
-        
+    .benefits-text {
+        font-weight: 400;
+    }
+    
     .benefits-subtitle {
         margin-bottom: 8px;
         font-weight: 500;
@@ -595,7 +592,6 @@ background-color: transparent;
         letter-spacing: 0.02em;
         color: #2e2f42;
     }
-                                
 }
 
 /* section 3 */
@@ -631,9 +627,9 @@ background-color: transparent;
 }
 
 .team-card-content {
-      min-width: 264px;
-      margin: 32px 16px;
-      text-align: center;
+    max-width: 264px;
+    margin: 32px 16px;
+    text-align: center;
   }
 
 .team-subtitle {
@@ -660,32 +656,26 @@ background-color: transparent;
 .team-item {
     background-color: #ffffff;
     border-radius: 0 0 4px 4px;
-    /* padding: 0px 0px 32px 0px; */
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 @media only screen and (min-width: 768px) {
     .team {
-            padding: 96px 108px;
-        }
-    /* .team-title {
-        max-width: 155.25px;
-    } */
-
+        padding: 96px 108px;
+    }
+    
     .team-list {
         justify-content: center;
         flex-wrap: wrap;
         flex-direction: row;
-        gap: 64px 23px;
+        gap: 64px 24px;
     }
-    
-    
 }
 
 @media only screen and (min-width: 1158px) {
-.team {
-        padding: 120px 156px;
+    .team {
+        padding: 120px 0;
     }
 
     .team-title {
@@ -693,20 +683,21 @@ background-color: transparent;
         letter-spacing: 0;
     }
 
-        .team-list {
-            flex-wrap: nowrap;
-            gap: 24px;
-        }
-    .team-item {
-        width: calc((100% - 72px) / 4);
-    }         
+    .team-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
 }
 
 /* section 4 */
 
-.portfolio {}
+.portfolio {
+    padding: 96px 16px;
+}
 
-.portfolio-container {}
+.portfolio-container {
+    padding: 0;
+}
 
 .portfolio-title {
     min-width: 218px;
@@ -768,10 +759,10 @@ background-color: transparent;
 
 .portfolio-wrapper {
     position: relative;
-        overflow: hidden;
-    
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition-property: box-shadow;
+    overflow: hidden;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: box-shadow;
 }
 
 .portfolio-card-container {
@@ -813,21 +804,25 @@ background-color: transparent;
 }
 
 @media only screen and (min-width: 1158px) {
+    .portfolio {
+        padding: 120px;
+    }
     .portfolio-list {
-            flex-wrap: wrap;
-            column-gap: 24px;
-            row-gap: 48px;
-        }
-}  .portfolio-item {
-     width: calc((100% - 48px) / 3);
-
-}
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 40px;
+    }
+    .portfolio-item {
+        width: calc((100% - 48px) / 3);
+        
+    }
+}  
 
 /* footer */
 
 .footer {
     background-color: #2e2f42;
-    padding: 96px;
+    padding: 96px 16px;
 }
 
 .footer-container {
@@ -836,10 +831,13 @@ background-color: transparent;
     justify-content: center;
     flex-direction: column;
     gap: 72px;
+
+    padding: 0;
 }
 
 .footer-logo {
     display: flex;
+    padding: 0;
     margin-bottom: 16px;
     justify-content: center;
 }
@@ -849,7 +847,7 @@ background-color: transparent;
 }
 
 .footer-text {
-    width: 288px;
+    max-width: 288px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -902,11 +900,11 @@ background-color: transparent;
     fill: #f4f4fd;
 }
 
-.footer-subscribe {
-
-}
-
+.footer-subscribe {}
+   
 .footer-subscribe-caption {
+    width: 75px;
+    margin: 0 auto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -968,8 +966,11 @@ background-color: transparent;
 
 
 @media only screen and (min-width: 768px) {
-    
+    .footer {
+        padding: 96px 108px;
+    }
     .footer-container {
+        justify-content: flex-start;
         align-items: baseline;
         flex-direction: row;
         flex-wrap: wrap;
@@ -990,12 +991,15 @@ background-color: transparent;
     .socials-text {
         justify-content: flex-start;
     }
-    
+    .footer-subscribe-caption {
+        margin: 0;
+        margin-bottom: 16px;
+}
 }
 
 @media only screen and (min-width: 1158px) {
     .footer {
-        padding: 100px;
+        padding: 100px 0;
     }
     .logo-part {
         margin-right: 120px; 
@@ -1005,6 +1009,7 @@ background-color: transparent;
         margin-left: 80px; 
      }   
     .footer-container {
+        justify-content: center;
         flex-wrap: nowrap;
         gap: 0;
     }    
